@@ -1,0 +1,83 @@
+.resident-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 0.75rem;
+}
+
+.resident-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.resident-card:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.resident-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #e5e7eb;
+}
+
+.resident-info {
+  flex: 1;
+  text-align: left;
+}
+
+.resident-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.resident-apartment {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0 0 0.5rem 0;
+}
+
+.resident-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resident-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(249, 250, 251, 1) 100%);
+  color: #3b82f6;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .resident-card {
+    padding: 0.75rem;
+  }
+  
+  .resident-avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .resident-name {
+    font-size: 1rem;
+  }
+  
+  .resident-apartment {
+    font-size: 0.8125rem;
+  }
+}
